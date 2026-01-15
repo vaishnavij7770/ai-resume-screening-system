@@ -1,0 +1,7 @@
+flask
+pdfminer.six
+python-docx
+nltk
+spacy
+scikit-learn
+sentence-transformers

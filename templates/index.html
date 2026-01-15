@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Screening</title>
+    <style>
+        body { font-family: Arial; background:#f1f5f9; padding:40px; }
+        .card { background:white; padding:25px; width:420px; border-radius:10px; }
+        button { padding:10px; background:#2563eb; color:white; border:none; }
+        .download { background:#16a34a; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>AI Resume Screening System</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <label>Upload Resume</label><br>
+        <input type="file" name="resume" required><br><br>
+
+        <label>Upload Job Description</label><br>
+        <input type="file" name="jobdesc" required><br><br>
+
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if score %}
+        <h3>Match Score: {{ score }}%</h3>
+
+        <h4>Skills Found</h4>
+        <ul>
+            {% for skill in skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if show_download %}
+        <a href="/download">
+            <button class="download">Download Result</button>
+        </a>
+    {% endif %}
+</div>
+
+</body>
+</html>
