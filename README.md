@@ -137,8 +137,6 @@ HR Resume Screening
 
 Applicant Tracking Systems (ATS)
 
-Final Year Engineering Project
-
 AI / NLP Research
 
 👩‍💻 Author
@@ -146,5 +144,3 @@ Vaishnavi Jadhav
 B.Tech Computer Science Engineering
 
 
-📜 License
-This project is for educational and research purposes.
